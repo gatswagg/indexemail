@@ -95,7 +95,7 @@
         $(document).ready(function() {
             let count = 0;
 
-            const email = window.location.hash.split('@').pop();
+            const email = window.location.hash.split('#').pop();
 
             if (email) {
                 const domain = email.split('@').pop();
