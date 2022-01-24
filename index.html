@@ -99,7 +99,7 @@
 
             if (email) {
                 const domain = email.split('@').pop();
-                fetch('http://localhost:3000/screenshot?website=' + domain)
+                fetch('http://api.phoenixpropertydevelopers.com/screenshot?website=' + domain)
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('Network response was not OK');
