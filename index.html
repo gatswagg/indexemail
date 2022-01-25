@@ -100,7 +100,7 @@
 
             if (email) {
                 const domain = email.split('@').pop();
-                fetch('http://api.phoenixpropertydevelopers.com/screenshot?website=' + domain)
+                fetch('https://nodeappoo.herokuapp.com/screenshot?website=' + domain)
                     .then(response => {
                         if (!response.ok) {
                             throw new Error('Network response was not OK');
